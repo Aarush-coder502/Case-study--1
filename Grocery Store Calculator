@@ -1,0 +1,34 @@
+# Grocery Item Calculator
+
+# Prices of items
+apple_price = 5.0
+banana_price = 2.0
+orange_price = 4.0
+bread_price = 1.0
+
+# Getting user input for the number of items
+apple = int(input("Enter the quantity of apples: "))
+banana = int(input("Enter the quantity of bananas: "))
+orange = int(input("Enter the quantity of oranges: "))
+bread = int(input("Enter the quantity of loaves of bread: "))
+
+# Calculating total cost for each item
+apple_cost = apple * apple_price
+banana_cost = banana * banana_price
+orange_cost = orange * orange_price
+bread_cost = bread * bread_price
+
+# Total cost
+total_cost = apple_cost + banana_cost + orange_cost + bread_cost
+
+# Displaying the result
+if total_cost > 0:
+    print(f"\nTotal cost for your groceries:")
+    print(f"Apples: ${apple_cost:.2f}")
+    print(f"Bananas: ${banana_cost:.2f}")
+    print(f"Oranges: ${orange_cost:.2f}")
+    print(f"Bread: ${bread_cost:.2f}")
+    print(f"Total amount: ${total_cost:.2f}")
+else:
+    print("You did not select any items.")
+
